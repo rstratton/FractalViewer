@@ -191,7 +191,7 @@ public class MandelPanel extends JPanel {
     }
     
     public int numIters(double x, double y) {
-        /*
+        // Mandelbrot set logic
         double re = 0;
         double im = 0;
         double tempRe;
@@ -205,7 +205,8 @@ public class MandelPanel extends JPanel {
             }
         }
         return -1;
-        */
+        /*
+        // Julia set logic
         double tempX;
         for (int i = 0; i < MAX_ITERS; ++i) {
             if (Math.abs(x) > 10 || Math.abs(y) > 10) {
@@ -217,5 +218,6 @@ public class MandelPanel extends JPanel {
             }
         }
         return -1;
+        */
     }
 }
