@@ -1,10 +1,10 @@
 
-public class MandlebrotUI extends javax.swing.JFrame {
+public class MandelbrotUI extends javax.swing.JFrame {
 
     /**
-     * Creates new form MandlebrotUI
+     * Creates new form MandelbrotUI
      */
-    public MandlebrotUI() {
+    public MandelbrotUI() {
         initComponents();
     }
 
@@ -537,20 +537,20 @@ public class MandlebrotUI extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MandlebrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MandelbrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MandlebrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MandelbrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MandlebrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MandelbrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MandlebrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MandelbrotUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MandlebrotUI().setVisible(true);
+                new MandelbrotUI().setVisible(true);
             }
         });
     }
