@@ -1,4 +1,4 @@
-<project>
+<project default="main">
 
     <target name="clean">
         <delete dir="build"/>
@@ -9,7 +9,7 @@
         <javac srcdir="src" destdir="build/classes"/>
     </target>
 
-    <target name="jar">
+    <target name="jar" depends="compile">
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/MandelbrotUI.jar" basedir="build/classes">
             <manifest>
@@ -18,8 +18,10 @@
         </jar>
     </target>
 
-    <target name="run">
+    <target name="run" depends="jar">
         <java jar="build/jar/MandelbrotUI.jar" fork="true"/>
     </target>
+
+    <target name="main" depends="clean,run"/>
 
 </project>
